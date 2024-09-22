@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android)
     alias(libs.plugins.kotlin)
     alias(libs.plugins.compose)
+    alias(libs.plugins.screenshot)
 }
 
 android {
@@ -46,6 +47,8 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    experimentalProperties["android.experimental.enableScreenshotTest"] = true
 }
 
 dependencies {
@@ -55,6 +58,7 @@ dependencies {
     implementation(libs.compose.ui)
     implementation(libs.compose.graphics)
     debugImplementation(libs.compose.tooling)
+    screenshotTestImplementation(libs.compose.tooling)
     implementation(libs.compose.preview)
     implementation(libs.compose.material3)
 
