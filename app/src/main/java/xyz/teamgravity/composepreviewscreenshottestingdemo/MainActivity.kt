@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import xyz.teamgravity.composepreviewscreenshottestingdemo.ui.LoginScreen
 import xyz.teamgravity.composepreviewscreenshottestingdemo.ui.theme.ComposePreviewScreenshotTestingDemoTheme
 
 class MainActivity : ComponentActivity() {
